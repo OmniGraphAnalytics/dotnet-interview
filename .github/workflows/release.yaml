@@ -12,15 +12,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: mikefarah/yq@v4.44.5
+      - uses: mikefarah/yq@v4.45.1
         id: release
         with:
           cmd: yq '.release' ".github/workflow-configuration.yaml"
-      - uses: mikefarah/yq@v4.44.5
+      - uses: mikefarah/yq@v4.45.1
         id: major_v
         with:
           cmd: yq '.major_v' ".github/workflow-configuration.yaml"
-      - uses: mikefarah/yq@v4.44.5
+      - uses: mikefarah/yq@v4.45.1
         id: minor_v
         with:
           cmd: yq '.minor_v' ".github/workflow-configuration.yaml"
