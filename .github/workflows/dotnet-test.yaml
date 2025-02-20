@@ -28,9 +28,6 @@ jobs:
         uses: actions/setup-dotnet@v4.1.0
         with:
           dotnet-version: 8.0.x
-
-      - name: Add GitHub Nugget Source
-        run: dotnet nuget add source https://nuget.pkg.github.com/OmniGraphAnalytics/index.json -n github --username USERNAME --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text
       - name: Restore dependencies
         run: dotnet restore
       - name: Build
