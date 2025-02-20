@@ -1,28 +1,9 @@
 # The purpose of this configuration file is to provide configuration for workflows in the .github/ directory in easy way
 # Change setting in this file to enable/disable specific jobs in workflows.
 
-
 # This setting enables the release workflow
 # 'disabled' or 'enabled' values allowed
 release: enabled
-
-# This setting can enable or disable publishing to the GCP Artifact or PyPI index
-# 'gcp', 'disabled' or 'pypi' values allowed
-publish: gcp
-
-# This setting allows control over how the validation build will work.
-# 'simple' or 'disabled' values allowed
-validation: simple
-
-# This setting  enables the 'build-container' workflow
-# 'disabled' or 'enabled values allowed
-build_docker: disabled
-
-# This should match the name of the root directory of the project. E.g. 'mip_project' or 'omni_morph'.
-project_name: omni_model
-
-# This is name of the Docker image to build (if needed).
-image_name: python-project
 
 # Semver minor version
 minor_v: 2
