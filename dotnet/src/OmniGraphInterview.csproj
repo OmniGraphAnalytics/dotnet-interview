@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+    
+    <PropertyGroup>
+        <PackageId>OmniGraphInterview</PackageId>
+        <Version>0.0.0</Version>
+        <Authors>@OmniGraphAnalytics/platform-team</Authors>
+        <Company>OmniGraph</Company>
+        <PackageDescription>OmniGraph Interview code</PackageDescription>
+        <RepositoryUrl>https://github.com/OmniGraphAnalytics/dotnet-interview</RepositoryUrl>
+        <PackageLicenseExpression>Private</PackageLicenseExpression>
+        <PackageTags>OmniGraph, Interview, Public</PackageTags>
+        <PackageIconUrl>https://assets.gcpp.omnigraph.io/logos/omnigraph/favicon-black-bg.png</PackageIconUrl>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+    
+    <ItemGroup>
+      <PackageReference Include="AWSSDK.EventBridge" Version="3.7.402.26" />
+      <PackageReference Include="AWSSDK.SimpleNotificationService" Version="3.7.400.84" />
+      <PackageReference Include="Polly.Extensions" Version="8.5.2" />
+      <PackageReference Include="Polly.RateLimiting" Version="8.5.2" />
+      <PackageReference Include="Quartz" Version="3.13.1" />
+      <PackageReference Include="Quartz.Serialization.Json" Version="3.13.1" />
+      <PackageReference Include="SnD.ApiClient" Version="0.100.6" />
+      <PackageReference Include="SnD.Sdk" Version="1.2.9" />
+    </ItemGroup>
+</Project>
