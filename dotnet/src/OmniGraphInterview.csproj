@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
@@ -21,7 +21,7 @@
     
     <ItemGroup>
       <PackageReference Include="AWSSDK.EventBridge" Version="3.7.402.26" />
-      <PackageReference Include="AWSSDK.SimpleNotificationService" Version="3.7.400.84" />
+      <PackageReference Include="AWSSDK.SimpleNotificationService" Version="4.0.0.1" />
       <PackageReference Include="Polly.Extensions" Version="8.5.2" />
       <PackageReference Include="Polly.RateLimiting" Version="8.5.2" />
       <PackageReference Include="SnD.ApiClient" Version="0.1.2" />
